@@ -1,7 +1,8 @@
 # funwithagents 🤖
 
-**Open-source building blocks for giving robots an LLM brain.**
-Speech in, speech out, eyes on the world, and one async API per robot — so an agent can talk, look, react and move on a NAO or a Reachy Mini.
+**Open-source building blocks for agents and robots that interact with people.**
+
+At the core, [**wica-framework**](https://github.com/funwithagents/wica-framework) is a generic agent brain with multimodal inputs and outputs: any perception can flow in, and any capability can be exposed as an action. Around it, modular components handle the rest of the interaction: senses (speech recognition, vision), a voice (streaming TTS) and robot bodies (NAO, Reachy Mini).
 
 <!-- TODO: replace with a 10–20 s GIF of an agent talking through a NAO or Reachy Mini -->
 <!-- ![demo](https://raw.githubusercontent.com/funwithagents/.github/main/profile/demo.gif) -->
@@ -68,6 +69,8 @@ Every block works on its own, and most ship an **MCP server** so you can plug th
 
 ## Get involved
 
-⭐ Star what's useful to you · 🐛 Open an issue if you try it on a robot we haven't tested (wireless Reachy Mini, NAO v6, Pepper…) · 💬 Ideas and PRs welcome.
+⭐ Star what's useful to you
+🐛 Open an issue if you try it on a robot we haven't tested (wireless Reachy Mini, NAO v6, Pepper…)
+💬 Ideas and PRs welcome.
 
 <sub>Unofficial projects, not affiliated with Aldebaran or Pollen Robotics.</sub>
