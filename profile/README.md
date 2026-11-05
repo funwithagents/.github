@@ -2,7 +2,7 @@
 
 **Open-source building blocks for agents and robots that interact with people.**
 
-At the core, [**wica-framework**](https://github.com/funwithagents/wica-framework) is a generic agent brain with multimodal inputs and outputs: any perception can flow in, and any capability can be exposed as an action. Around it, modular components handle the rest of the interaction: senses (speech recognition, vision), a voice (streaming TTS) and robot bodies (NAO, Reachy Mini).
+At the core, [**wica-framework**](https://github.com/funwithagents/wica-framework) is a generic agent brain with multimodal inputs and outputs: any perception can flow in, and any capability can be exposed as an action. [**wica-interaction**](https://github.com/funwithagents/wica-interaction) builds on it to link everything together into one interaction app, running on a computer or inside a robot. Around them, modular components handle the rest of the interaction: senses (speech recognition, vision), a voice (streaming TTS) and robot bodies (NAO, Reachy Mini).
 
 <!-- TODO: replace with a 10–20 s GIF of an agent talking through a NAO or Reachy Mini -->
 <!-- ![demo](https://raw.githubusercontent.com/funwithagents/.github/main/profile/demo.gif) -->
@@ -17,6 +17,8 @@ At the core, [**wica-framework**](https://github.com/funwithagents/wica-framewor
   Brain     ┌──────────────────────────────────────────┐
             │  wica-framework  (World · Inputs ·       │   any LLM: Anthropic, OpenAI,
             │                   Commands · Agent)      │   Gemini, Mistral, HF Hub
+            │  wica-interaction (links it all into     │
+            │                    one app)              │
             └───────────────┬──────────────────────────┘
                             ▼
   Voice     ┌──────────────────────────────────────────┐
@@ -30,13 +32,13 @@ At the core, [**wica-framework**](https://github.com/funwithagents/wica-framewor
 ```
 
 Every block works on its own, and most ship an **MCP server** so you can plug them straight into an agent.
-
 ## Projects
 
-### 🧠 Agent
+### 🧠 Brain
 | Repo | What it does |
 |---|---|
-| [**wica-framework**](https://github.com/funwithagents/wica-framework) | Agent framework for multimodal, embodied interaction: a state-first World, reactive Inputs, cancellable Commands, provider-agnostic LLM loop. |
+| [**wica-framework**](https://github.com/funwithagents/wica-framework) | Agent framework for multimodal, embodied interaction: a state-first World, reactive Inputs, cancellable Commands, provider-agnostic LLM loop (Anthropic, OpenAI, Gemini, Mistral, HF). |
+| [**wica-interaction**](https://github.com/funwithagents/wica-interaction) | Interact with a WICA agent that talks and acts back. One app, two embodiments: a voice assistant on your computer, or a Reachy Mini that listens, sees hand signs and plays emotions. Puts all the blocks below together. |
 
 ### 🎙️ Senses & voice
 | Repo | What it does |
